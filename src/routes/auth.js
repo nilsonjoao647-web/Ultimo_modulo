@@ -12,7 +12,9 @@ router.post('/register', async (req, res) => {
     const query = `INSERT INTO users (username, password_hash) VALUES ('${username}', '${password}')`;
     await pool.query(query);
     res.redirect('/login');
-  } catch (err) {
+  } 
+  catch (err) {
+    console.log(err)
     res.render('register', { error: 'Utilizador já existe ou dados inválidos.', username: null });
   }
 });
