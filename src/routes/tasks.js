@@ -68,4 +68,6 @@ router.post('/tasks/:id/delete', requireAuth, async (req, res) => {
   res.redirect('/tasks');
 });
 
+// Ismael Garcia Cabral Pereira
+
 module.exports = router;
