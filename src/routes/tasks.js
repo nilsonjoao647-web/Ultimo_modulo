@@ -69,5 +69,6 @@ router.post('/tasks/:id/delete', requireAuth, async (req, res) => {
 });
 
 // Ismael Garcia Cabral Pereira
+//hotfix/fix-task-idor
 
 module.exports = router;
