@@ -11,12 +11,9 @@ const apiRoutes = require('./routes/api');
 // Initialize Express app
 //const app = express();
 
-const app2 = "something"();
+
 let app = express();
 app.disable('x-powered-by');
-if (app2) {
-  console.log("nothing", app2);
-}
 
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
